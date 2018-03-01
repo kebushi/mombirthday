@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312" />
+<title>生日快乐</title>
+<style type="text/css">
+body{
+ background-color:#ffeafd;
+}
+ #top{
+	   width: 100%;
+	   background-image:url(picture/bj.jpg);
+	   background-size:100%;
+       background-repeat:no-repeat;
+	   text-align:center;
+}
+ #content{
+     width: 80%;
+     margin-left:auto;margin-right:auto;  
+     border:10px solid transparent; 
+     -webkit-border-image:url(picture/border.jpg) 30 30 round; /* Safari 5 and older */
+	 -o-border-image:url(picture/border.jpg) 30 30 round; /* Opera */
+	 -moz-border-image:url(picture/border.jpg) 30 30 round;
+	 border-image:url(picture/border.jpg) 30 30 round;  
+     overflow: hidden; 
+     text-align:center;
+ }
+#happy
+{
+	width:20%;
+    position:relative;
+	animation:myfirst 3s linear 0s infinite alternate;
+	/* Firefox: */
+	-moz-animation:myfirst 3s linear 0s infinite alternate;
+	/* Safari and Chrome: */
+	-webkit-animation:myfirst 3s linear 0s infinite alternate;
+	/* Opera: */
+	-o-animation:myfirst 3s linear 0s infinite alternate; 
+}
+
+@keyframes myfirst
+{
+	from  { top:0px;}
+	to { top:20px;}	
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+	from  { top:0px;}
+	to { top:20px;}	
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+	from  { top:0px;}
+	to { top:20px;}	
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+	from  { top:0px;}
+	to { top:20px;}		
+}
+</style>
+</head>
+<body>
+<div id="top">
+	<img id="cheng" src="picture/cheng.gif"></img><img id="happy" src="picture/happy.png"></img><img id="lin" src="picture/lin.gif">
+<div id="content">
+  <video width="100%" controls="controls" autoplay="autoplay" poster="picture/poster.png">
+    <source src="video/birthday.mp4"type="video/mp4" />
+  </video>
+</div>
+</div>
+</body>
+</html>
